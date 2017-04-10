@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/swiper.css">
+</head>
+<body>
+    <div class="">
+        <div class="floor swiper-container" style="width:1024px;height:768px;margin:0 auto">
+            <a class="arrow-left" >1234</a>
+            <a class="arrow-right" >1234</a>
+            <div class="swiper-wrapper">
+                    <!-- 滚动的第一屏 -->
+                    <div class="swiper-slide page1" style="width:1024px;height:768px;margin:0 auto">123</div>
+                    <!-- 滚动的第二屏 -->
+                    <div class="swiper-slide page2" style="width:1024px;height:768px;margin:0 auto">456</div>
+                    <!-- 滚动的第三屏 -->
+                    <div class="swiper-slide page3" style="width:1024px;height:768px;margin:0 auto">789</div>
+
+            </div>
+        </div>
+        <div class="floor" style="width:1024px;height:768px;background: blue;margin:0 auto"></div>
+        <div class="floor" style="width:1024px;height:768px;background: black;margin:0 auto"></div>
+        <div class="floor" style="width:1024px;height:768px;background: pink;margin:0 auto"></div>
+
+    </div>
+</body>
+<script src="static/js/plug/jquery-1.11.1.js"></script>
+<script src="static/js/plug/swiper.js"></script>
+<script src="static/js/plug/echo.js"></script>
+<script>
+    
+
+        function floor(){
+            this.floors = $('.floor'); 
+            this.flag = true;      
+        }
+
+        
+        floor.prototype.getPosition =  function (){
+            
+            var positions = [];
+
+            $.each(this.floors,function(i,e){
+                positions.push($(e).offset().top)
+            })
+
+            this.positions = positions;
+        }
+
+        floor.prototype.move = function(){
+            var self = this;
+            console.log(self.next)
+            $('html,body').animate({scrollTop:self.positions[self.next]}, 200, function(){
+                self.flag = true;
+            });
+        }
+
+        floor.prototype.nowPosition = function (height){
+            var scrollY = window.scrollY,
+                self = this,
+                isBpttom = $(document).scrollTop() >= height;
+            if(scrollY > 0){
+                this.positions.forEach(function (i,index){
+                    if(scrollY >= i){
+                        if (isBpttom) {  
+                            self.now = index + 1;
+                        } else{
+                            self.now = index;
+                        } 
+                    }
+                });
+            }else{
+                self.now = 0;
+            }
+        }
+
+        floor.prototype.event = function(){
+            this.getPosition();
+            var value = 0,
+                self = this,
+                length = self.floors.length - 1,
+                height = $(document).height()-$(window).height(),
+                scrollFunc=function(e){
+                    if(self.flag){
+                        self.flag = false;
+                        e = e || window.event; 
+                        if(e.wheelDelta){//IE/Opera/Chrome 
+                            value = e.wheelDelta; 
+                        }else if(e.detail){//Firefox 
+                            value = e.detail; 
+                        }
+                        self.nowPosition(height);
+                        if(value > 0){
+                            self.next = self.now <= 0 ? 0 : --self.now;
+                        }else if(value < 0){
+                             self.next = self.now >= length ? length : ++self.now;
+                        }
+                        self.move();
+                    }
+                    return false
+                } 
+            /*注册事件*/ 
+            if(document.addEventListener){ 
+                document.addEventListener('DOMMouseScroll',scrollFunc,false); 
+            }//W3C 
+            window.onmousewheel=document.onmousewheel=scrollFunc;//IE/Opera/Chrome 
+        }
+
+
+
+        
+
+    
+    var a= new floor();
+    a.event()
+
+    var mySwiper = new Swiper('.swiper-container',{  
+           
+            speed:500,  //滚动页面的速度
+            //autoplay:2000,
+            autoplayDisableOnInteraction : true,
+   
+            loop : true,
+            simulateTouch:false, //禁止触屏事件
+            mode: 'horizontal',  // 滑动方向上下垂直  horizontal
+       
+            onFirstInit: function(swiper) {  
+                        // 首次初始化后马上执行
+            }
+        })
+
+        $(document).on('click','.arrow-left',function(){
+            mySwiper.slidePrev();
+            return false;
+        })
+
+        $(document).on('click','.arrow-right',function(){
+            mySwiper.slideNext();
+            return false;
+        })
+</script>
+</html>
