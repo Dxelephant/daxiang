@@ -1,0 +1,150 @@
+.noselect{
+    -moz-user-select:none;/*火狐*/
+
+    -webkit-user-select:none;/*webkit浏览器*/
+
+    -ms-user-select:none;/*IE10*/
+
+    -khtml-user-select:none;/*早期浏览器*/
+
+    user-select:none;
+}
+.arrow-left {
+    position: absolute;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: black;
+    opacity: 0.4;
+    text-align: center;
+    line-height: 35px;
+   
+}
+
+.arrow-right {
+    cursor: pointer;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: black;
+    opacity: 0.4;
+    text-align: center;
+    line-height: 35px;
+}
+
+.banner .iconfont{
+    font-size:20px;
+    color:white;
+}
+
+.longRange {
+    position: relative
+}
+
+.longRange .btn{
+    position: absolute;
+    width: 124px;
+    height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    color:white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+.longRange .liaojie {
+    bottom: 20%;
+    left: 13.6%;
+    background: #0071b7;
+}
+
+.longRange .yuyue {
+    bottom: 20%;
+    left: 26.5%;
+    background: #f28e1e
+}
+
+.banner img {
+    width: 100%
+}
+
+.process .top {
+    display: flex
+}
+
+.process .part1 {
+    width: 600px;
+    margin: 20px 0 0 50px
+}
+
+.process .part2 {
+    width: 450px;
+    margin: 20px 0 0 50px
+}
+
+.process .part2 p{
+    margin: 30px 0 0 78px;
+    font-size:16px;
+    color:#415364;
+    line-height: 30px;
+}
+
+.process .part3{
+    position: relative;
+    display: flex;
+    top: -100px;
+    left: 200px; 
+}
+
+.process .part3>div{
+    width: 240px;
+    border:1px solid #415364;
+    margin-left:20px;
+    border-radius: 20px;
+}
+
+.process .part3>div span{
+    display: block;
+    width:230px;
+    height: 30px;
+    line-height: 30px;
+    background: #415364;
+    margin: 0 auto;
+}
+
+.process .part3>div i{
+    display: block;
+    font-size: 50px;
+    color:#415364;
+    text-align: center;
+}
+
+.process .part3>div p{
+    width:200px;
+    margin:0 auto;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+.process a{
+    display: block;
+    width: 124px;
+    height: 40px;
+    background: #415364;
+    color:white;
+    text-align: center;
+    line-height: 40px;
+    margin:0 auto;
+    font: 16px;
+    letter-spacing: 2px;
+    border-radius: 6px;
+}
