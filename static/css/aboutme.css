@@ -1,0 +1,83 @@
+.main{
+    padding-left:22px;
+}
+
+.title{
+    position: relative;
+    margin-top:45px;
+}
+.title h3{
+    color:#0070b6;
+    font-size:18px;
+}
+
+.title p{
+    position: absolute;
+    height: 2px;
+    width:1176px;
+    background: #4d4d4d;
+    top:18px;
+    left:85px;
+}
+
+.milepost{
+    margin-top:46px;
+}
+
+.milepost>div span{
+    display: inline-block;
+    width:160px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.milepost .time{
+    line-height: 40px;
+    color:#008dcf;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: oblique;
+
+}
+.milepost .event{
+    color:#008ac9;
+}
+.milepost>div:nth-child(odd) span{
+    vertical-align: bottom;
+}
+
+.milepost>div:nth-child(even) span{
+    vertical-align: top;
+}
+
+.milepost>div:nth-child(odd) .time{
+    border-bottom: 5px solid #018ccd;
+    
+}
+
+.milepost>div:nth-child(odd) .event{
+    border-right: 2px solid #018ccd;
+    border-bottom: 5px solid #018ccd;
+    padding:10px;
+}
+
+.milepost>div:nth-child(even) .time{
+    border-top: 5px solid #018ccd;
+   
+}
+
+.milepost>div:nth-child(even) .event{
+    border-right: 2px solid #018ccd;
+    border-top: 5px solid #018ccd;
+    padding:10px;
+}
+
+.main .conent .text{
+    border-bottom: 1px dotted #4c4c4c;
+    width:810px;
+    margin-top:40px;
+}
+
+.main .conent .text p{
+    margin-bottom:30px;
+}
