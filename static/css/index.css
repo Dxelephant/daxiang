@@ -49,6 +49,7 @@
 }
 
 .longRange .btn{
+    cursor: pointer;
     position: absolute;
     width: 124px;
     height: 40px;
@@ -109,6 +110,14 @@
     border:1px solid #415364;
     margin-left:20px;
     border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.process .part3 img{
+    width:60px;
+    height: 60px;
+    display: block;
+    margin: 10px auto;
 }
 
 .process .part3>div span{
@@ -118,6 +127,8 @@
     line-height: 30px;
     background: #415364;
     margin: 0 auto;
+    color:white;
+    text-align: center;
 }
 
 .process .part3>div i{
@@ -131,7 +142,9 @@
     width:200px;
     margin:0 auto;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 18px;
+    margin-top:12px;
+    font-size:12px;
 
 }
 

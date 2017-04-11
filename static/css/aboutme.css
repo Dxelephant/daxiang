@@ -9,14 +9,15 @@
 .title h3{
     color:#0070b6;
     font-size:18px;
+    letter-spacing: 2px;
 }
 
 .title p{
     position: absolute;
     height: 2px;
-    width:1176px;
+    width:1196px;
     background: #4d4d4d;
-    top:18px;
+    top:16px;
     left:85px;
 }
 
@@ -71,7 +72,9 @@
     border-top: 5px solid #018ccd;
     padding:10px;
 }
-
+.main .conent{
+    display: flex;
+}
 .main .conent .text{
     border-bottom: 1px dotted #4c4c4c;
     width:810px;
@@ -80,4 +83,17 @@
 
 .main .conent .text p{
     margin-bottom:30px;
+}
+
+.main .conent .text .English{
+    color:#919191;
+}
+
+.main .conent .right{
+    width:435px;
+    margin-left:30px;
+}
+
+.main .conent .right img{
+    margin-top:16px;
 }
