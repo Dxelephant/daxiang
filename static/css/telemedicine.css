@@ -1,0 +1,24 @@
+* {
+    font-family: "微软雅黑";
+    color: #343434;
+}
+
+.ylhead {
+    display: flex;
+    justify-content: space-between
+}
+
+.yltitle {
+    width: 600px;
+    padding-left: 90px;
+}
+
+.yltitle>h1 {
+    font-size: 27px;
+    margin-top: 50px;
+    letter-spacing: 5px;
+}
+
+.title_logo {
+    margin-top: 20px;
+}
