@@ -1,6 +1,5 @@
 * {
     font-family: "微软雅黑";
-    color: #343434;
 }
 
 .ylhead {
@@ -9,16 +8,521 @@
 }
 
 .yltitle {
-    width: 600px;
+    width: 580px;
     padding-left: 90px;
 }
 
 .yltitle>h1 {
-    font-size: 27px;
+    font-size: 30px;
     margin-top: 50px;
     letter-spacing: 5px;
 }
 
 .title_logo {
+    margin-top: 25px;
+}
+
+.title1_text {
+    color: #333333;
+    width: 450px;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.title2_text {
+    margin-top: 25px;
+    color: #000;
+    font-size: 15px;
+    font-family: "黑体";
+}
+
+.title1_logo {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    align-items: center
+}
+
+
+/*远程诊室*/
+
+.yczs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #71a8cb;
+    height: 35px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+
+/*图片轮播点击*/
+
+.swiper-button-prev {
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.swiper-button-next {
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.yclb {
+    margin-top: 7px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+/*服务流程*/
+
+.fwlc {
+    width: 1291px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.lctitle {
+    width: 330px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #000;
+    font-family: "黑体";
+    background: #fff;
+    z-index: 2147483647;
+    position: relative;
+    text-align: center;
+    margin-left: 484px;
+}
+
+.liucheng {
+    width: 100%;
+    height: 300px;
+    margin-top: -15px;
+    border: 2px solid #999999;
+    display: flex;
+    justify-content: center;
+    /*align-items: center*/
+}
+
+
+/*背景图形CSS*/
+
+#talkbubble1 {
+    width: 231px;
+    height: 50px;
+    letter-spacing: 5px;
+    background: #2e318d;
+    font-weight: 600;
+    transform: skew(-11deg);
+    -webkit-transform: skew(-11deg);
+    -moz-transform: skew(-11deg);
+    -o-transform: skew(-11deg);
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+#talkbubble1:before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 26px solid #2e318d;
+    border-bottom: 13px solid transparent;
+    margin-left: -5px;
+}
+
+#talkbubble2 {
+    width: 231px;
+    height: 50px;
+    letter-spacing: 5px;
+    background: #004896;
+    font-weight: 600;
+    transform: skew(-11deg);
+    -webkit-transform: skew(-11deg);
+    -moz-transform: skew(-11deg);
+    -o-transform: skew(-11deg);
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+#talkbubble2:before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 26px solid #004896;
+    border-bottom: 13px solid transparent;
+    margin-left: -5px;
+}
+
+#talkbubble3 {
+    width: 231px;
+    height: 50px;
+    letter-spacing: 5px;
+    background: #008ccd;
+    font-weight: 600;
+    transform: skew(-11deg);
+    -webkit-transform: skew(-11deg);
+    -moz-transform: skew(-11deg);
+    -o-transform: skew(-11deg);
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+#talkbubble3:before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 26px solid #008ccd;
+    border-bottom: 13px solid transparent;
+    margin-left: -5px;
+}
+
+#talkbubble4 {
+    width: 231px;
+    height: 50px;
+    letter-spacing: 5px;
+    background: #29a6dd;
+    font-weight: 600;
+    transform: skew(-11deg);
+    -webkit-transform: skew(-11deg);
+    -moz-transform: skew(-11deg);
+    -o-transform: skew(-11deg);
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.lc_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.lc_item>p {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+
+/*会员卡介绍*/
+
+.hyk {
+    background: #ededed;
+    height: 685px;
+    margin-top: 22px;
+}
+
+.tyk_pr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tyk {
+    width: 800px;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.tyk>h1 {
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 40px
+}
+
+.tyk_logo {
+    width: 380px;
+    height: 374px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+
+/*画实线*/
+
+.shixian {
+    width: 800px;
+    height: 0;
+    border-bottom: #fff 1px solid;
     margin-top: 20px;
+    margin-left: -30px;
+}
+
+.tyk_div {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 35px;
+}
+
+.vipimg {
+    width: 178px;
+    height: 114px;
+}
+
+.tyk_dtxt {
+    margin-left: 48px;
+}
+
+.tyk_dtxt>h1 {
+    color: #004795;
+    font-family: '微软雅黑';
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.tyk_dtxt>h2 {
+    color: #004795;
+    font-family: '微软雅黑';
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin-top: 3px;
+}
+
+.tyk_dtxt>p {
+    color: #000;
+    font-family: '黑体';
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    font-weight: 600
+}
+
+.vipk_pr {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end
+}
+
+.vipk {
+    width: 610px;
+    margin-left: 80px;
+    display: flex;
+    align-items: flex-end
+}
+
+.vipk_dtxt {
+    margin-left: 48px;
+}
+
+.vipk_dtxt>h1 {
+    color: #ec5b24;
+    font-family: '微软雅黑';
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.vipk_dtxt>h2 {
+    color: #ec5b24;
+    font-family: '微软雅黑';
+    font-size: 19px;
+    letter-spacing: 2px;
+    margin-top: 3px;
+}
+
+.vipk_dtxt>p {
+    color: #000;
+    font-family: '黑体';
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.vipk_logo {
+    width: 615px;
+    background: #ec5b24;
+    height: 50px;
+    margin-top: 45px;
+    margin-left: 10px;
+    color: #fff;
+    padding: 7px;
+    padding-left: 50px;
+    font-family: "黑体"
+}
+
+.vipk_logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.vipk_lotxt1 {
+    font-size: 18px;
+    font-weight: 900;
+    margin-right: 15px;
+    letter-spacing: 1px;
+}
+
+.vipk_lotxt2 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-left: 20px;
+    letter-spacing: 3px;
+}
+
+
+/*预约步骤*/
+
+.yybz {
+    width: 430px;
+    height: 185px;
+    border: #43484e 1px solid;
+    margin-right: 25px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.yybz>p {
+    color: #004795;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.circle1 {
+    background: #a8bbdc;
+    height: 120px;
+    width: 120px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.circle2 {
+    background: #8c9dcb;
+    height: 120px;
+    width: 120px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.circle3 {
+    background: #6791c1;
+    height: 120px;
+    width: 120px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.henxiang {
+    width: 40px;
+    height: 0;
+    border-bottom: #8d9bca 2px solid;
+    /*margin-top: 20px;
+    margin-left: -30px;*/
+}
+
+.cir_tile {
+    margin-top: 5px;
+    font-size: 30px;
+    color: #a8bbdc;
+    font-weight: 900;
+    width: 100%;
+    /*display: flex;
+    justify-content: space-between*/
+}
+
+.cir_pr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -5px;
+}
+
+.step1 {
+    margin-left: 16px;
+}
+
+.step2 {
+    margin-left: 69px;
+}
+
+.step3 {
+    color: #6791c1;
+    margin-left: 72px;
 }
