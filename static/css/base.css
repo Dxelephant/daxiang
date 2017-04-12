@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 /* 禁用iPhone中Safari的字号自动调整 */
+
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -8,33 +9,132 @@ html {
     -webkit-overflow-scrolling: touch;
 }
 
+
 /* 禁止缩放表单 */
-input[type="submit"], input[type="reset"], input[type="button"], input {
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input {
     resize: none;
     border: none;
 }
 
+
 /* 取消链接高亮  */
-body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
 /* 设置HTML5元素为块 */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 
+
 /* 图片自适应 */
+
 img {
     width: 100%;
     height: auto;
-    width: auto \9; /* ie8 */
+    width: auto \9;
+    /* ie8 */
     display: block;
-    -ms-interpolation-mode: bicubic; /*为了照顾ie图片缩放失真*/
+    -ms-interpolation-mode: bicubic;
+    /*为了照顾ie图片缩放失真*/
 }
 
+
 /* 初始化 */
-body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     margin: 0;
     padding: 0;
 }
@@ -46,11 +146,13 @@ body {
     background-color: #fff;
 }
 
-em, i {
+em,
+i {
     font-style: normal;
 }
 
-ul, li {
+ul,
+li {
     list-style-type: none;
 }
 
@@ -80,11 +182,17 @@ a:hover {
     text-decoration: none;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: 100%;
     font-family: 'Microsoft YaHei';
 }
@@ -120,12 +228,15 @@ input {
 .fr {
     float: right;
 }
-.pl{
+
+.pl {
     padding-left: 10px;
 }
-.pr{
+
+.pr {
     padding-right: 10px;
 }
+
 .db {
     display: block !important;
 }
@@ -134,14 +245,18 @@ input {
     display: none;
 }
 
+
 /*单行溢出*/
+
 .one_txt_cut {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
+
 /*多行溢出 手机端使用*/
+
 .txt_cut {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -150,8 +265,11 @@ input {
     -webkit-box-orient: vertical;
 }
 
+
 /* 水平垂直居中类 */
-.my__center, .my_center:before {
+
+.my__center,
+.my_center:before {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -159,15 +277,20 @@ input {
     transform: translate(-50%, -50%);
 }
 
+
 /* 垂直居中类 */
-.my__center_y, .my_center_y:before {
+
+.my__center_y,
+.my_center_y:before {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
+
 /* 头部边框类 */
+
 .top_line {
     position: relative;
 }
@@ -183,7 +306,9 @@ input {
     z-index: 99998;
 }
 
+
 /* 右边边框类 */
+
 .right_line {
     position: relative;
 }
@@ -198,23 +323,33 @@ input {
     top: 0;
     z-index: 99998;
 }
+
+
 /*版心*/
-.w{
+
+.w {
     width: 1293px;
     margin: 0 auto;
 }
+
+
 /*头部色条*/
-.colorBar{
+
+.colorBar {
     width: 100%;
     height: 22px;
     background-color: #0071b7;
 }
+
+
 /*头部start*/
-.header{
+
+.header {
     height: 118px;
     padding-top: 27px;
 }
-.line{
+
+.line {
     width: 1px;
     height: 58px;
     background-color: #0071b7;
@@ -222,42 +357,46 @@ input {
     margin-left: 185px;
     top: 10px;
 }
-.logoInfo{
+
+.logoInfo {
     position: relative;
 }
-.logoInfo img{
+
+.logoInfo img {
     width: 171px;
     height: 59px;
     padding-top: 5px;
-
 }
-.info span{
+
+.info span {
     font-size: 30px;
-    color:#0071b7;
+    color: #0071b7;
     position: absolute;
     margin-left: 32px;
     top: 13px;
-    
 }
-.info h2{
+
+.info h2 {
     font-size: 16px;
     margin-left: 73px;
     padding-top: 16px;
-    color:#0071b7;
+    color: #0071b7;
 }
-.info p{
+
+.info p {
     margin-left: 33px;
     font-size: 14px;
     line-height: 30px;
-    color:#0071b7;
+    color: #0071b7;
 }
-.loginbox a{
+
+.loginbox a {
     width: 100px;
     height: 32px;
     display: block;
     text-align: center;
     line-height: 32px;
-    color:#fff;
+    color: #fff;
     font-family: simhei;
     font-size: 16px;
     letter-spacing: 2px;
@@ -265,11 +404,15 @@ input {
     margin-left: 20px;
     margin-top: 28px;
 }
-.loginbox a:hover{
+
+.loginbox a:hover {
     background-color: #82c1ea;
 }
+
+
 /*头部end*/
-.navBar{
+
+.navBar {
     height: 40px;
     background-image: -webkit-linear-gradient(right, #28a5db -10%, #024b98 80%);
     padding-left: 140px;
@@ -277,10 +420,12 @@ input {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.navBar li{
+
+.navBar li {
     float: left;
 }
-.navBar li a{
+
+.navBar li a {
     width: 152px;
     height: 40px;
     line-height: 40px;
@@ -289,29 +434,38 @@ input {
     font-size: 16px;
     color: #fff;
     margin-left: 10px;
-    
 }
-.navBar li a:hover{
+
+.navBar li a:hover {
     background-color: #29a6de;
 }
+
+.bg {
+    background-color: #29a6de;
+}
+
+
 /*底部start*/
-.footer{
+
+.footer {
     width: 100%;
     height: 60px;
     background-color: #0071b7;
     /*margin-top: 200px;*/
-    text-align: center;  
+    text-align: center;
     padding-top: 20px;
     font-size: 12px;
 }
-.footer-link a{
+
+.footer-link a {
     color: #fff;
     margin-left: 40px;
-    
-    
 }
-.copyright{
-    color:#fff;
+
+.copyright {
+    color: #fff;
     line-height: 30px;
 }
+
+
 /*底部end*/

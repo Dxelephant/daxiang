@@ -56,6 +56,34 @@
 
 /*主体内容*/
 
+.readbanner {
+    background: url("../images/read_banner2.png");
+    height: 610px;
+}
+
+.bannerdiv {
+    padding-top: 210px;
+    margin-left: 80px;
+    font-family: "黑体";
+    color: #fff;
+}
+
+.bannertitle {
+    font-size: 50px;
+    font-weight: 500;
+    text-shadow: #ebebeb 0 1px 0;
+    letter-spacing: 3px;
+    line-height: 65px;
+}
+
+.bannertxt {
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    text-shadow: #ebebeb 0 1px 0;
+    line-height: 30px;
+}
+
 .read_cen {
     background: #f0f0f0;
     color: #000;
@@ -449,4 +477,8 @@
     font-size: 11px;
     margin-top: 30px;
     color: #333;
+}
+
+.fm {
+    margin-top: 200px;
 }

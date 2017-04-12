@@ -29,22 +29,35 @@
                 <p>让医疗触手可及 | Make healthcare closer</p>
             </div>
         </div>
-        <div class="login"></div>
+        <div class="loginbox fr">
+            <a class="login fl" href="javascript:;">登录入口</a>
+            <a class="help fr" href="javascript:;">帮助中心</a>
+        </div>
     </div>
     <!--导航栏-->
     <div class="navBar w">
         <ul>
             <li><a href="javascript:;">首页</a></li>
             <li><a href="javascript:;">远程医疗</a></li>
-            <li><a href="javascript:;">影像阅片</a></li>
+            <li><a class="bg" href="javascript:;">影像阅片</a></li>
             <li><a href="javascript:;">大数据中心</a></li>
             <li><a href="javascript:;">关于我们</a></li>
             <li><a href="javascript:;">新闻资讯</a></li>
         </ul>
     </div>
     <!--主体内容-->
-    <div class="w">
-        <img src="static/images/read_banner.png">
+    <div class="w readbanner">
+        <div class="bannerdiv">
+            <p class="bannertitle">
+                我们为医疗机构<br> 提供放射科阅片托管服务
+            </p>
+            <p class="bannertxt">
+                大象医生远程阅片服务是专为体检机构及中小型医疗卫生机构提供医学远程影像诊断，<br> 旨在通过互联网云服务，提高合作机构阅片质量并减少阅片成本。
+                <br> 运用先进的互联网影像传输技术，大象医生可以实时获取您从设备上传的影像文件，并
+                <br> 在规定的时效内完成阅片工作，为您解决缺少优质影像医生资源的困境。
+            </p>
+        </div>
+        <!--<img src="static/images/read_banner2.png">-->
     </div>
     <div class="w read_cen">
         <!--4个保证-->
@@ -228,6 +241,9 @@
                     <div class="swiper-slide"> <img style="width: 310px;height:233px;" src="static/images/readfk_l1.png" alt="daxiang_logo"></div>
                     <div class="swiper-slide"> <img style="width: 310px;height:233px;" src="static/images/readfk_l2.png" alt="daxiang_logo"></div>
                     <div class="swiper-slide"> <img style="width: 310px;height:233px;" src="static/images/readfk_l3.png" alt="daxiang_logo"></div>
+                    <div class="swiper-slide"> <img style="width: 310px;height:233px;" src="static/images/readfk_l1.png" alt="daxiang_logo"></div>
+                    <div class="swiper-slide"> <img style="width: 310px;height:233px;" src="static/images/readfk_l2.png" alt="daxiang_logo"></div>
+                    <div class="swiper-slide"> <img style="width: 310px;height:233px;" src="static/images/readfk_l3.png" alt="daxiang_logo"></div>
 
                 </div>
 
@@ -264,7 +280,7 @@
 
 
     <!--底部-->
-    <div class="footer">
+    <div class="footer fm">
         <div class="footer-link clearfix">
             <a href="javascript:;">关于我们</a>
             <a href="javascript:;">加入我们</a>
@@ -283,7 +299,7 @@
             prevButton: '.swiper-button-prev',
             slidesPerView: 3,
             spaceBetween: 30,
-            autoplay: 2000,
+            autoplay: 3000,
             freeMode: false
         });
     </script>
