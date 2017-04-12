@@ -85,7 +85,8 @@
 }
 
 .read_cen {
-    background: #f0f0f0;
+    /*background: #f0f0f0;*/
+    background: url("../images/read_bg.png");
     color: #000;
 }
 
@@ -182,6 +183,14 @@
     font-weight: 700;
 }
 
+#divcss5 {
+    margin: 10px auto
+}
+
+#divcss5 img {
+    border-radius: 50%
+}
+
 
 /*画虚线*/
 
@@ -272,7 +281,7 @@
     width: 144px;
     height: 30px;
     padding-left: 55px;
-    background: #7dcb44;
+    background: #29aae3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -354,12 +363,12 @@
 
 .khfk_div {
     width: 100%;
-    height: 260px;
-    margin-top: 20px;
+    height: 320px;
+    margin-top: 25px;
     border-bottom: 2px solid #a9a9a9;
     border-top: 2px solid #a9a9a9;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: flex-start
 }
@@ -404,7 +413,7 @@
 .fkxx {
     width: 950px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 80px;
     color: #000;
     font-family: '微软雅黑';
 }
@@ -464,7 +473,7 @@
     background-image: -webkit-linear-gradient(right, #28a5db 30%, #3470ac 80%);
     color: #fff;
     font-size: 15px;
-    margin-top: 5px
+    margin-top: 15px
 }
 
 .fkxx_end {
@@ -474,9 +483,10 @@
 }
 
 .fkxx_end>h2 {
-    font-size: 11px;
+    font-size: 12px;
     margin-top: 30px;
-    color: #333;
+    color: #666;
+    letter-spacing: 1px;
 }
 
 .fm {
