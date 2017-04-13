@@ -31,18 +31,19 @@
         </div>
         <div class="loginbox fr">
             <a class="login fl" href="javascript:;">登录入口</a>
-            <a class="help fr" href="javascript:;">帮助中心</a>
+            <a class="help fr" href="./qnda.html">帮助中心</a>
         </div>
     </div>
     <!--导航栏-->
     <div class="navBar w">
         <ul>
-            <li><a href="javascript:;">首页</a></li>
-            <li><a href="javascript:;">远程医疗</a></li>
+            <li><a href="./index.html">首页</a></li>
+            <li><a href="./telemedicine.html">远程医疗</a></li>
             <li><a class="bg" href="javascript:;">影像阅片</a></li>
             <li><a href="javascript:;">大数据中心</a></li>
-            <li><a href="javascript:;">关于我们</a></li>
-            <li><a href="javascript:;">新闻资讯</a></li>
+            <li><a href="./aboutme/index.html">关于我们</a></li>
+            <li><a href="./drNews.html">新闻资讯</a></li>
+            
         </ul>
     </div>
     <!--主体内容-->
@@ -292,10 +293,10 @@
         <form action="" method="post">
             <div class="fkxx_tx">
                 <div class="fkxx_inpr">
-                    <input class="fkxx_in" name="textfield" type="text" maxlength="20" placeholder='姓名/Name' pattern="[A-Za-z]{3}" />
-                    <input class="fkxx_in" name="textfield" type="text" maxlength="20" placeholder='邮件地址/Email address' pattern="[A-Za-z]{3}"
+                    <input class="fkxx_in" name="textfield" type="text" maxlength="20" placeholder='姓名/Name' pattern="^[\u4E00-\u9FA5A-Za-z]+$"
                     />
-                    <input class="fkxx_in" name="textfield" type="text" maxlength="20" placeholder='联系电话/Phone Number' pattern="[A-Za-z]{3}"
+                    <input class="fkxx_in" name="textfield" type="email" maxlength="20" placeholder='邮件地址/Email address' />
+                    <input class="fkxx_in" name="textfield" type="text" maxlength="20" placeholder='联系电话/Phone Number' pattern="^((0\d{2,3}-\d{7,8})|(1[3584]\d{9}))$"
                     />
                 </div>
                 <div><textarea placeholder="您想了解的信息/Messages" class="fkxx_ar"></textarea></div>
