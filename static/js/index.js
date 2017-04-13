@@ -117,7 +117,6 @@ floor.prototype.getPosition =  function (){
         simulateTouch:false, //禁止触屏事件
         mode: 'horizontal',  // 滑动方向上下垂直  horizontal
         onSlideChangeEnd: function(swiper){
-            console.log(swiper.activeIndex)
                                 if(swiper.activeIndex == 1 || swiper.activeIndex == bannerimageLength+1){
                                     $('.ball').show();
                                 }else{
