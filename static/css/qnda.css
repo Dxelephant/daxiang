@@ -1,0 +1,49 @@
+.navBar{
+    padding:0 32px;
+}
+.navBar li a{
+    width: 231px;
+}
+.navBar .return{
+    float: right;
+}
+/*远程诊疗卡Q&A start*/
+.qt{
+    height: 100px;
+    border-bottom: 1px dashed #444750;
+    text-align: center;
+    line-height: 100px;
+}
+.qt h1{
+    color:#444750;
+    font-size: 30px;
+}
+.qc ul li{
+    margin-top: 27px;
+    letter-spacing: 2px;
+    position: relative;
+}
+.qc li h3{
+    height: 39px;
+    line-height: 39px;
+    background-color: #a8d4ef;
+    padding-left: 133px;
+}
+.qc li p{
+    height: 75px;
+    line-height: 75px;
+    background-color: #daecfa;
+    padding-left: 133px;
+    margin-top: 3px;
+    font-family: "microsoft yahei";
+    
+}
+.qc li span{
+    font-size: 80px;
+    color:#fff;
+    position: absolute;
+    left: 20px;
+    top: -22px;
+
+}
+/*远程诊疗卡Q&A end*/
