@@ -254,12 +254,17 @@
 }
 
 .td_js {
-    display: flex;
-    justify-content: space-around;
+    /*display: flex;
+    justify-content: space-around;*/
     margin-top: 35px;
 }
 
-.td_js>div {
+.tdswiper-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.tddiv {
     width: 270px;
     height: 320px;
     border: 1px solid #000;
