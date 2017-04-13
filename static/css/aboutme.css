@@ -42,6 +42,8 @@
 }
 .milepost .event{
     color:#008ac9;
+    text-align: left;
+    font-size: 13px;
 }
 .milepost>div:nth-child(odd) span{
     vertical-align: bottom;
@@ -97,3 +99,6 @@
 .main .conent .right img{
     margin-top:16px;
 }
+
+.footer{margin-top:40px;position: fixed;
+    bottom: 0;}
