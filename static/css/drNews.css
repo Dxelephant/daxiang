@@ -1,0 +1,167 @@
+/*大象最新新闻 start*/
+.latestNews{
+    height: 115px;
+    background-color: #eeeeee;
+    text-align: center;
+    padding-top: 50px;
+}
+.latestNews p{
+    font-size: 30px;
+    color:#403a3a;
+}
+.newsContent .news-l{
+    width: 756px;
+    height: 465px;
+    position: relative;
+}
+.newsContent .Triangle{
+    width: 30px;
+    height: 30px;
+    background-color: #eeeeee;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    transform: rotate(45deg);
+    top: -15px;
+}
+.news-l .partner1 , 
+.news-l .partner2{
+    width: 292px;
+    height: 465px;
+    /*background-color: pink;*/
+    margin: 65px 30px 0 30px;
+}
+.news-l img{
+    width: 249px;
+    height: 93px;
+    margin: 0 auto;
+}
+.news-l .newsT{
+    padding: 10px 26px;
+}
+.news-l .newsT h2{
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+.details{
+    width: 98px;
+    height: 41px;
+    background-color: #67bbd7;
+    color:#fff;
+    text-align: center;
+    line-height: 41px;
+    box-shadow: 2px 1px gray;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.news-r{
+    width: 537px;
+    background-color: #fafafa;
+    height: 465px;
+}
+.news-r .newsWrap ul{
+    padding:70px 0 28px 42px;
+    height: 262px;
+    overflow: hidden;
+}
+/*页码 start*/
+.page_container {
+    height: 35px;
+    line-height: 30px;
+    width: 510px;
+    overflow: hidden;
+    text-align: center;
+    color: #757575;
+    margin: 25px 63px;
+}
+
+.page_num_container {
+    width: 206px;
+    margin: 0 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    height: 30px;
+}
+
+.page_num_container ul {
+    position: absolute;
+    top: 0;
+}
+
+.page_num_container ul li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #f5c6bc;
+    color:#fff;
+    border-radius: 10px;
+    line-height: 30px;
+    margin-right: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.page_num_container ul li:hover,
+.page_num_container ul li.active {
+    background: #ec4d3a;
+    color: #fff;
+}
+
+.page_btn {
+    width: 89px;
+    height: 32px;
+    background-color: #ed927d;
+    color:#fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.page_btn:hover {
+    background: #ec4d3a;
+
+}
+
+.prev_btn {
+    margin-right: 10px;
+}
+        
+/*页码 start*/
+.news-r ul li a{
+    width: 397px;
+    height: 49px;
+    display: block;
+    line-height: 49px;
+    padding: 0 25px;
+}
+.news-r ul li a:hover{
+    background-color: #e4e4e4;
+}
+/*大象最新新闻 end*/
+/*大象新闻图文区域 start*/
+.graphicInfo{
+    padding: 65px 124px 0 124px;
+    
+}
+.graphicInfo .grapNews{
+    margin-left: 57px;
+    margin-bottom: 62px;
+}
+.graphicInfo .grapNews img{
+    width: 220px;
+    height: 220px;
+}
+.graphicInfo  .grapContent{
+    width: 230px;
+}
+.grapContent h2{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 50px;
+}
+.grapContent p{
+    font-size: 12px;
+    line-height: 20px;
+}
+/*大象新闻图文区域 end*/
