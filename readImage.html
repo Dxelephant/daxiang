@@ -311,16 +311,16 @@
     <!--反馈信息填写-->
     <div class="fkxx">
         <h1>阅片咨询</h1>
-        <form action="" method="post">
+        <form onsubmit="return PostData()">
             <div class="fkxx_tx">
                 <div class="fkxx_inpr">
-                    <input class="fkxx_in" name="textfield" type="text" maxlength="20" placeholder='姓名/Name' pattern="^[\u4E00-\u9FA5A-Za-z]+$"
+                    <input class="fkxx_in" id='name' name="textfield" type="text" maxlength="20" required placeholder='姓名/Name' pattern="^[\u4E00-\u9FA5A-Za-z]+$"
                     />
-                    <input class="fkxx_in" name="textfield" type="email" maxlength="20" placeholder='邮件地址/Email address' />
-                    <input class="fkxx_in" name="textfield" type="text" maxlength="20" placeholder='联系电话/Phone Number' pattern="^((0\d{2,3}-\d{7,8})|(1[3584]\d{9}))$"
+                    <input class="fkxx_in" id="email" type="email" maxlength="20" required placeholder='邮件地址/Email address' />
+                    <input class="fkxx_in" id="Phone" type="text" maxlength="20" required placeholder='联系电话/Phone Number' pattern="^((0\d{2,3}-\d{7,8})|(1[3584]\d{9}))$"
                     />
                 </div>
-                <div><textarea placeholder="您想了解的信息/Messages" class="fkxx_ar"></textarea></div>
+                <div><textarea id="Messages" placeholder="您想了解的信息/Messages" required class="fkxx_ar"></textarea></div>
 
             </div>
 
@@ -350,6 +350,7 @@
 
     <!-- Swiper JS -->
     <script src="static/js/plug/swiper.js"></script>
+    <script src="static/js/plug/jquery-1.11.1.js"></script>
     <!-- Initialize Swiper -->
     <script>
         //专家团队轮播
@@ -370,6 +371,18 @@
             autoplay: 3000,
             freeMode: false
         });
+        //表单提交
+
+        function PostData() {
+            alert($("#Messages").val());
+            $.ajax({
+                type: "POST",
+                url: "post.go",
+                data: "",
+                success: function (msg) {}
+            });
+            return false;
+        }
     </script>
 
 </body>
